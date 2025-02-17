@@ -7,10 +7,11 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
+import android.widget.ImageView
 import androidx.annotation.IntRange
 import java.util.Date.from
 
-class drawingView(context: Context, attrs: AttributeSet) : View(context,attrs){
+class drawingView(context: Context, attrs: AttributeSet) : androidx.appcompat.widget.AppCompatImageView(context,attrs){
 
     private var mDrawPath:CustomPath?=null
     private var mCanvasBitmap:Bitmap?=null
